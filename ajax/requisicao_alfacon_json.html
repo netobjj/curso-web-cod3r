@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Alfa teste</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class="conteudo exercicio">
+    <h1>Requisição </h1>
+
+    <script>
+
+        /*
+        const url = 'https://www.alfaconcursos.com.br/admin_v2/edicts/examination_boards.json'
+        fetch(url, {
+            mode: 'no-cors',
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: 'username=jose.euclides@alfaconcursos.com.br&password=anleftao12'
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Não foi possível fazer o login.')
+                }
+                return response.json()
+            })
+            .then(data => {
+                // faça algo com o cookie de autenticação
+            })
+            .catch(error => console.error('Erro:', error))
+            */
+
+
+
+
+        const url = 'https://www.alfaconcursos.com.br/admin_v2/edicts/edicts.json';
+        fetch(url)
+            .then(resp => resp.json())
+            .then(estados => {
+                const itens = estados.reduce(
+                    (html, estado) => html + `<li>${estado.nome}</li>`, ''
+                )
+                document.body.insertAdjacentHTML('beforeend', `<ul>${itens}</ul>`)
+            })
+    </script>
+</body>
