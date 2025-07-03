@@ -15,9 +15,9 @@ global.desc = 0.1
 console.log(getPreco())
 console.log(produto.getPreco())
 
-const carro =  {preco: 3500, desc: 0.2}
+const carro = { preco: 3500, desc: 0.2 }
 
-console.log(getPreco.call(carro, 0.5, "$")); 
+console.log(getPreco.call(carro, 0.5, "$"));
 console.log(getPreco.apply(global, [0.5, '$$#']));
 
 // resume: the context of the call and apply set the object This that the function will get.
