@@ -8,3 +8,4 @@ delete produto.nome;
 delete produto['valor do produto']
 
 console.log(produto);
+
