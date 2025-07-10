@@ -5,7 +5,7 @@ produto['valor do produto'] = 90.90;
 console.log(produto)
 
 delete produto.nome;
-delete produto['valor do produto']
+delete produto['valor do produto'];
 
 console.log(produto);
 
@@ -29,6 +29,5 @@ const carro = {
     }
 }
 
-
-carro.valor = 1000
-console.log(carro)
+carro.valor = 1000;
+console.log(carro);

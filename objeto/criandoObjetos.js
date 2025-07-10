@@ -40,7 +40,7 @@ function criarPessoa(nome, dataNasc, cpf, escolaridade, rendimentos) {
 const filha = Object.create(null);
 filha.nome = "Maria";
 
-console.log(filha)
+console.log(filha);
 
 const fromJSON = JSON.parse(' {"info": "esse é um teste "}');
-console.log(fromJSON.info)
+console.log(fromJSON.info);
